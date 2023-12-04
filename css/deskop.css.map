@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,aAAa;EACT,KAAK,EAAE,KAAK",
+"sources": ["../scss/deskop.scss"],
+"names": [],
+"file": "deskop.css"
+}
