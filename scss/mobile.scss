@@ -1,0 +1,7 @@
+@import 'variable';
+@import 'mixin';
+
+header img{
+    width: 100%;
+    @include border-radius(15px, 15px, 0, 0);
+}

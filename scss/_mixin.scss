@@ -1,0 +1,13 @@
+@mixin display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin border-radius($brtr: 0, $brtl: 0, $brbr: 0, $brbl: 0){
+    border-top-right-radius: $brtr;
+    border-top-left-radius: $brtl;
+    border-bottom-right-radius: $brbr;
+    border-bottom-left-radius: $brbl;
+}
+

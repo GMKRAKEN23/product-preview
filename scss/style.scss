@@ -1,7 +1,7 @@
 // principal file
 
 @import 'variable';
-@import '_mixin';
+@import 'mixin';
 @import 'placeholders';
 
 @import 'mobile';
@@ -13,11 +13,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital@0;1&family=Fraunces:opsz@9..144&family=Libre+Baskerville&family=Montserrat&family=Poppins:wght@300;400&family=Roboto&display=swap');
 
 body{
-    background: green;
-    font-family: 'Montserrat', sans-serif;
-    color: red;
+    background: $primary-cream;
+    font-family: 'fraunces', sans-serif;
+    min-height: 100vh; 
+    @include display-flex;
+    font-size: 15px;
+}
+
+article{
+    background: $neutral-white;
+    @include border-radius (12px, 12px, 10px, 10px);
+    margin: 0 10px;
+}
+
+.information, .product_price{
+    margin: 0 20px;
+    h2{
+        text-transform: capitalize;
+        font-weight: $font-weight-strong;
+        font-size: 2rem;
+    }
+    p{
+        color: $neutral-grayish;        
+        &:nth-of-type(1){
+            text-transform: uppercase;
+            text-transform: capitalize; 
+            letter-spacing: 4px;
+            font-size: 1.2rem;
+        }
+    }
+    button{
+        background: $primary-dark-cyan;
+        border: none; outline: none;
+        width: 100%;
+        padding: 14px 0;
+        @include border-radius (5px, 5px, 5px, 5px);
+        margin: 20px auto;
+        color: $neutral-white;
+        font-weight: 700;
+        font-size: 1rem;
+        @include display-flex;
+        i{
+            margin: 0 5px;
+            font-size: 1.3rem;
+            font-weight: $font-weight-strong;
+        }
+    }
+}
+
+.product_price{
+    .price{
+        color: $primary-dark-cyan;
+        font-size: 3rem;
+        font-weight: $font-weight-strong;
+    }
+    .price_delete{
+        margin: 10px 10px 0 10px;
+        font-weight: normal;
+        color: $neutral-grayish;
+        font-size: 0.8rem;
+    }
 }
 
 @media screen and (max-width: 375px){
-    
+    @import 'mobile';
 }
