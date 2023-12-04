@@ -1,0 +1,23 @@
+// principal file
+
+@import 'variable';
+@import '_mixin';
+@import 'placeholders';
+
+@import 'mobile';
+
+// font-family: Monstserrat
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital@0;1&family=Libre+Baskerville&family=Montserrat&family=Poppins:wght@300;400&family=Roboto&display=swap');
+
+// font-family : fraunces 
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital@0;1&family=Fraunces:opsz@9..144&family=Libre+Baskerville&family=Montserrat&family=Poppins:wght@300;400&family=Roboto&display=swap');
+
+body{
+    background: green;
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+}
+
+@media screen and (max-width: 375px){
+    
+}
