@@ -37,7 +37,6 @@ article{
         color: $neutral-grayish;        
         &:nth-of-type(1){
             text-transform: uppercase;
-            text-transform: capitalize; 
             letter-spacing: 4px;
             font-size: 1.2rem;
         }
@@ -64,8 +63,8 @@ article{
 .product_price{
     .price{
         color: $primary-dark-cyan;
-        font-size: 3rem;
         font-weight: $font-weight-strong;
+        font-size: 2rem;
     }
     .price_delete{
         margin: 10px 10px 0 10px;
@@ -75,6 +74,10 @@ article{
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (min-width: 375px){
     @import 'mobile';
+}
+
+@media screen and (min-width: 1440px){
+    @import 'deskop';
 }
